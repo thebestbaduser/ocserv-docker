@@ -8,7 +8,7 @@ Buggy script for configuring OpenConnect (ocserv) protocol on the server easily 
 1. Install Docker
 2. Build docker image
 ```bash
-docker build -t ocserv https://github.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+docker build -t ocserv https://github.com/samsesh/ocserv-docker.git
 ```
 
 3. Run docker container
@@ -114,9 +114,7 @@ Next steps like add or remove users are same as Docker Installation part.
 ## Issues
 Feel free to submit issues and enhancement requests or contact me via [vida.page/nima](https://vida.page/nima).
 
-## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&type=Date)](https://star-history.com/#iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&Date)
 
 
 ## More
