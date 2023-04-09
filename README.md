@@ -13,7 +13,7 @@ docker build -t ocserv https://github.com/samsesh/ocserv-docker.git
 
 3. Run docker container
 ```bash
-docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
+docker run --name ocserv --restart unless-stopped --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
 
 4. Add user
@@ -105,14 +105,14 @@ docker build . -t ocserv
 
 Create new container from ocserv image
 ```sh
-docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
+docker run --name ocserv --privileged --restart unless-stopped -p 443:443 -p 443:443/udp -d ocserv
 ```
 
 Next steps like add or remove users are same as Docker Installation part.
 
 
 ## Issues
-Feel free to submit issues and enhancement requests or contact me via [vida.page/nima](https://vida.page/nima).
+Feel free to submit issues and enhancement requests or contact me my site [samsesh.net](https://samsesh.net).
 
 
 
