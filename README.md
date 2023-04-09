@@ -90,7 +90,7 @@ And one more thing, contributions are welcome.
 ## How to customize the configuration?
 In docker way, at the beginning you have to clone the repo:
 ```sh
-git clone https://github.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+git clone https://github.com/samsesh/ocserv-docker.git
 ```
 
 cd to the directory
