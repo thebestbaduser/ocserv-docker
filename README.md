@@ -55,7 +55,7 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup_$(date +'%m-%d-
 
 > Restore
 ```bash
-docker exec -i ocserv sh -c 'cat > /etc/ocserv/ocpasswd ' <  ocserv_backup_$(date +'%m-%d-%y').txt
+docker exec -i ocserv sh -c 'cat > /etc/ocserv/ocpasswd ' <  ocserv_backup.txt
 ```
 
 ## Script Installation
