@@ -46,17 +46,15 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
 
 10. Backup user & Restore 
-- Note: This only backs up and restores the list of users, it does not back up their status such as whether they are locked or not.
-
 > Backup :
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup.txt
 ```
-
 > Restore
 ```bash
 docker exec -i ocserv sh -c 'cat > /etc/ocserv/ocpasswd ' <  ocserv_backup.txt
 ```
+- Note: This only backs up and restores the list of users, it does not back up their status such as whether they are locked or not.
 
 ## Script Installation
 Tested on ubuntu 18.04 and 16.04.
