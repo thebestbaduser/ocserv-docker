@@ -15,7 +15,6 @@ docker build -t ocserv https://github.com/samsesh/ocserv-docker.git
 ```bash
 docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d --restart unless-stopped ocserv
 ```
-
 4. Add user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
@@ -44,6 +43,19 @@ docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 9. Show all users and their hashed password
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd
+```
+
+10. Backup user & Restore 
+- Note: This only backs up and restores the list of users, it does not back up their status such as whether they are locked or not.
+
+> Backup :
+```bash
+docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup_$(date +'%m-%d-%y').txt
+```
+
+> Restore
+```bash
+docker exec -i ocserv sh -c 'cat > /etc/ocserv/ocpasswd ' <  ocserv_backup_$(date +'%m-%d-%y').txt
 ```
 
 ## Script Installation
