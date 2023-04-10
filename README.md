@@ -50,7 +50,7 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 
 > Backup :
 ```bash
-docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup_$(date +'%m-%d-%y').txt
+docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup.txt
 ```
 
 > Restore
