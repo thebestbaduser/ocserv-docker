@@ -61,7 +61,7 @@ Tested on ubuntu 18.04 and 16.04.
 
 Download and saving script on your server:
 ```bash
-curl -O https://raw.githubusercontent.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv/master/ocserv-install.sh
+curl -O https://github.com/samsesh/ocserv-docker/raw/master/ocserv-install.sh
 ```
 
 Making script executable
@@ -105,7 +105,7 @@ git clone https://github.com/samsesh/ocserv-docker.git
 
 cd to the directory
 ```sh
-cd ./OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv
+cd ./ocserv-docker
 ```
 You can change port, disable UDP, add custom-header and so on.
 Modify and customize ocserv.conf file and then build your image with modified ocserv.conf:
