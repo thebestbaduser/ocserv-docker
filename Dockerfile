@@ -27,6 +27,7 @@ RUN set -ex \
     gnutls-utils \
     oath-toolkit-dev \
     libmaxminddb-dev \
+    libmaxminddb \
     && wget ftp://ftp.infradead.org/pub/ocserv/ocserv-$OCSERV_VERSION.tar.xz \
     && mkdir -p /etc/ocserv \
     && tar xf ocserv-$OCSERV_VERSION.tar.xz \

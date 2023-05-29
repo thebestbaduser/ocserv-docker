@@ -45,7 +45,17 @@ docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
 
-10. Backup user & Restore 
+10.  Show all connected users
+```bash
+docker exec -ti ocserv occtl show users
+```
+
+11.   Show all options on occtl
+```bash
+docker exec -ti ocserv occtl help
+```
+
+12.  Backup user & Restore 
 > Backup :
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd >> ocserv_backup.txt
